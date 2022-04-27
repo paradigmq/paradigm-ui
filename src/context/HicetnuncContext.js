@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React, { createContext, Component } from 'react'
-import { withRouter } from 'react-router'
 import {
   BeaconWallet,
   // BeaconWalletNotInitialized,
@@ -1192,5 +1191,4 @@ class HicetnuncContextProviderClass extends Component {
   }
 }
 
-const HicetnuncContextProvider = withRouter(HicetnuncContextProviderClass)
-export default HicetnuncContextProvider
+export default HicetnuncContextProviderClass
