@@ -78,9 +78,6 @@ function TokenFeed({
     keyPath,
   })
 
-  // TODO: tokens.length might be incorrect
-  const hasProbablyMore = tokens.length === limit
-
   if (!tokens.length) {
     return (
       <Container>
@@ -113,7 +110,7 @@ function TokenFeed({
         setLimit(newLimit)
         setSearchParams({ [namespace]: newLimit })
       }}
-      hasMore={hasProbablyMore}
+      hasMore={true}
       loader={undefined}
       endMessage={undefined}
     >
