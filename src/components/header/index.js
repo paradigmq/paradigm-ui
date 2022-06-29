@@ -82,8 +82,7 @@ export const Header = () => {
               {/* HIC LOGO */}
               {true && context.theme !== 'unset' && (
                 <img
-                  /* src={`${process.env.REACT_APP_LOGOS}/logos/${context.theme}/${context.logo}`} */
-                  src={`${process.env.REACT_APP_LOGOS}/logos/pride/${context.logo}`}
+                  src={`${process.env.REACT_APP_LOGOS}/logos/${context.theme}/${logo}`}
                   alt="teia-logo"
                 ></img>
               )}
